@@ -1,0 +1,381 @@
+/** ---------VARIABLES--------- */
+:root {
+  /* fonts */
+  --logo-font: 'Raleway', sans-serif;
+  --main-font: 'Roboto', sans-serif;
+
+  /* colors */
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --slate: #434455;
+  --white: #fff;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+}
+
+/* Null margin and padding */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--slate);
+  background-color: var(--white);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  gap: 40px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/**------------HEADER-------------- */
+
+header {
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+}
+
+.header-nav {
+  display: flex;
+}
+/* logo */
+
+.logo {
+  color: var(--iris);
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-top {
+  margin-right: 76px;
+}
+
+.black-accent-color {
+  color: var(--navyblue);
+}
+
+/* navigation */
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.menu-item {
+  color: var(--navyblue);
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+/* adress */
+.adress {
+  font-style: normal;
+}
+
+.adress-item {
+  color: var(--slate);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu-item:hover,
+.adress-item:hover,
+.menu-item:focus,
+.adress-item:focus {
+  color: var(--ocean);
+}
+
+/* --------ORDER SERVICE-------*/
+.order-section {
+  background: var(--navyblue);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.order-service-title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+/* order service button */
+.order-service-button {
+  color: var(--white);
+  font-weight: 500;
+  background: var(--iris);
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  letter-spacing: 0.64px;
+}
+
+.order-service-button:hover,
+.order-service-button:focus {
+  background: var(--ocean);
+}
+
+/* --------- 2nd section, Text blocks---------*/
+
+.text-block-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.text-items {
+  display: flex;
+  gap: 24px;
+}
+
+.item-list {
+  width: calc((100% - 24px * 3) / 4);
+}
+
+.title-section {
+  color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.title-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--navyblue);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ----- 3rd section, Text with images------*/
+
+.img-container {
+  padding-bottom: 120px;
+}
+
+.title-section {
+  margin-bottom: 72px;
+}
+
+.img-list {
+  display: flex;
+  gap: 24px;
+}
+
+.img-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+/* --------- 4th section, Our Team -------- */
+
+.our-team-section {
+  background-color: var(--cloud);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background: var(--white, #fff);
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-text {
+  text-align: center;
+  padding: 32px 16px 32px;
+  gap: 8px;
+}
+
+.team-text h3 {
+  margin-bottom: 8px;
+}
+
+/* --------------- Footer -------------- */
+
+.white-accent-color {
+  color: var(--cloud);
+}
+
+.footer {
+  background-color: var(--navyblue);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-description {
+  color: var(--cloud);
+  max-width: 264px;
+  width: 100%;
+}
+
+/* --------------- PORTFOLIO -------------- */
+.portfolio-nav-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.portfolio-navigation {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-nav {
+  /* background */
+  background: var(--cloud);
+  border: 1px solid var(--cornflower, #e7e9fc);
+  border-radius: 4px;
+  padding: 12px 24px;
+  /* text */
+  color: var(--iris);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio-nav:hover,
+.portfolio-nav:focus {
+  background: var(--ocean);
+  /* Button Text */
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid transparent;
+}
+
+.portfolio-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  border-top: none;
+}
+
+.portfolio-card img {
+  max-width: 100%;
+}
