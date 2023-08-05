@@ -198,6 +198,11 @@ header {
   color: var(--ocean);
 }
 
+.menu-item,
+.address-item {
+  transition: color var(--transition-time) var(--transition-function);
+}
+
 /* --------ORDER SERVICE-------*/
 .order-section {
   background: var(--navyblue);
@@ -208,6 +213,7 @@ header {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   max-width: 1440px;
@@ -349,7 +355,7 @@ button {
 
 .team-text {
   text-align: center;
-  padding: 32px 16px 32px;
+  padding: 32px 0;
   gap: 8px;
 }
 
